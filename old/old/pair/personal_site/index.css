@@ -1,0 +1,17 @@
+/*Code to change the appearance of the body*/
+body{
+    background-color: rgb(44, 179, 233);
+}
+
+/*code to change header appearance*/
+h1{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-align: center;
+    color: antiquewhite;
+}
+p{
+color: yellow;
+font-family: fantasy;
+font-size: larger;
+}

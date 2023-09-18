@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- made a class to center my page 
+      -- the icon classes focus on centering the images
+      -- the center classes focus on the text with a focus on the ordered list to clean them up
+      -- okay i know this was a simple assignment but adhd kicked in
+      -- to help center my page i made a class to teansform each section into a back and made the max right magin high enough so only one box appears
+      -- added a coloed background to help see text
+      --i know theres a better way to format but making each section a block was a simple way for a simple site
+      --found that allign start looked better-->
+    <style>
+      .iCon {
+        height: 330px;
+        width: 300px;
+        overflow: hidden;
+      }
+      .iCon img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .centerd{ 
+        text-align: start; 
+        list-style-position:inside; 
+      }   
+      .centerd li{ 
+        display:list-item;
+        text-align: start;
+          text-indent: 50%;
+          margin-right: 30%;       
+      }
+      .box{
+        display: block;
+        text-align: center;
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+      body{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color:bisque;
+    }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Zoo Directory</title>
+  </head>
+  <!-- made a center class to center my page  -->
+  <body class="centerd">
+    <header>
+     <center><h1>A List of the animals that can be found here at the Coding Zoo</h1></center>
+    </header>
+    <!--this is the section to create one animal
+      --I made each animal into a section and divided them into solid boxes to align them.
+      --I made sure to inclue the header with the type an animal and an orderd list of each name
+      -- I then added a section in the boc for a picture and then added a little desctription beneath
+      --Finnaly I went and grabbed a hyperlink for each animal fact   
+    -->
+    <div>
+      <section class="box">
+        <h1>Bears</h1>
+        <ol class="centerd">
+          <li>Ollie</li>
+          <li>Mona</li>
+        </ol>
+        <div>
+          <img
+            src="https://pyxis.nymag.com/v1/imgs/9a8/4f0/334fd7affff0c7beb9d092351bfcc7eac0-GettyImages-1271918348.rvertical.w330.jpg"
+            ,
+            alt="Description"
+            ,
+            class="iCon"
+          />
+          <p>
+            Big Fluffy Thing with sharp claws teeth. Can come in a variety of
+            colors
+          </p>
+        </div>
+        <p><a href="https://a-z-animals.com/animals/bear/">Bear Facts</a></p>
+      </section>
+      <section class="box">
+        <h1>Giraffes</h1>
+        <ol class="centerd">
+          <li>Frankie</li>
+          <li>Coconut</li>
+        </ol>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            ,
+            alt="Description"
+            ,
+            class="iCon"
+          />
+        </div>
+        <p>Long neck, spots, basically looks like a horse with a long neck</p>
+        <p>
+          <a href="https://a-z-animals.com/animals/giraffe/">Giraffe Facts</a>
+        </p>
+      </section>
+      <section class="box">
+        <h1>Lions</h1>
+        <ol class="centerd">
+          <li>Mella</li>
+          <li>Karl</li>
+        </ol>
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6f1R1-_-83cejTOeqrzzoKEtcPg3SCQcVbw&usqp=CAU"
+            ,
+            alt="Description"
+            ,
+            class="iCon"
+          />
+        </div>
+        <p>Big cat/dog, has mane, is royalty of jungle</p>
+        <p><a href="https://a-z-animals.com/animals/lion/">Lion Facts</a></p>
+      </section>
+      <section class="box">
+        <h1>Monkeys</h1>
+        <ol class="centerd">
+          <li>Cookie</li>
+          <li>Earl</li>
+          <li>Banana Pudding</li>
+        </ol>
+        <div>
+        <img
+          src="https://a2.cdn.japantravel.com/photo/20734-230849/1440x960!/kyoto-kyoto-s-wild-monkey-park-230849.jpg"
+          ,
+          alt="Description"
+          ,
+          class="iCon"
+        />
+        </div>
+        <p>Furry guys that rang from tiny to large, can have thumbs, likes bananas</p>
+        <p>
+          <a href="https://a-z-animals.com/animals/monkey/">Monkey Facts</a>
+        </p>
+      </section>
+      <section class="box">
+        <h1>Alligators</h1>
+        <ol class="centerd">
+          <li>Wren</li>
+          <li>Aspen</li>
+          <li>Mika</li>
+        </ol>
+        <div>
+        <img
+          src="https://cdn.golfmagic.com/field/image/jYlasCtH.jpg"
+          ,
+          alt="Description"
+          ,
+          class="iCon"
+        />
+        </div>
+        <p>Some kind of dinosaur thats still around</p>
+        <p>
+          <a href="https://a-z-animals.com/animals/alligator/"
+            >Alligator Facts</a
+          >
+        </p>
+      </section>
+    </div>
+   
+    <footer></footer>
+  </body>
+</html>

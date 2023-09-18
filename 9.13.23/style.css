@@ -1,0 +1,289 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.info{
+    /* works for any element */
+    display: flex;
+    background-color: #f0f0f0; /* Background color for the form container */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Style the form header */
+.info h2 {
+    padding: 10px; /* Add some padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add some space between the header and form inputs */
+}
+
+.solid{
+    display: block;
+}
+
+main{
+    display: block;
+}
+   
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007acc; /* Blue submit button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005d9c;
+}
+
+.mGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-rows: repeat(2, auto); /* Two rows, adjust as needed */
+    grid-gap: .4%;
+    background-color:#00FFFF;
+    padding: 1%;
+    grid-template-areas:
+        "header_block header_block2 header_block3"
+        "menu_block main_block2 main_block3";
+    max-width: 100%;
+}
+.top1, .top2, .top3, .bottom1, .bottom2, .bottom3 {
+    background-color:#000033;
+    width: 99%; /* Set the width to % of the container */
+    height: 30vh; /* Set the height to % of the viewport height */
+    position: relative;
+}
+
+/* Define grid areas */
+.top1 {
+    grid-area: header_block;
+    z-index: 0;
+}
+
+.top2 {
+    grid-area: header_block2;
+    z-index: 0;
+}
+
+.top3 {
+    grid-area: header_block3;
+}
+
+.bottom1 {
+    grid-area: menu_block;
+}
+
+.bottom2 {
+    grid-area: main_block2;
+}
+
+.bottom3 {
+    grid-area: main_block3;
+}
+
+.foot{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+
+/* Adjust the width of individual elements based on screen size using media queries */
+@media (min-width: 481px) and (max-width: 1023px) {
+    /* Styles for iPad (1024 x 768) */
+    .mGrid {
+        grid-gap: 0.5%; /* Adjust the gap for screens with a maximum width of 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for Mobile (480 x 320) */
+    .mGrid {
+        grid-gap: 0.9%; /* Adjust the gap for screens with a maximum width of 768px */
+    }
+}
+
+.circle {
+    width: 100px; /* Adjust the size of the circles */
+    height: 100px; /* Adjust the size of the circles */
+    border-radius: 50%; /* Create a circle shape */
+    background-color: #ff00ff; 
+    position: absolute;
+    z-index: 2; /* Adjust the z-index to control the layering */
+}
+
+.circle1 {
+    left: 30%; /* Adjust the position of the circle horizontally */
+    top: 20%; /* Adjust the position of the circle vertically */
+}
+
+.circle2 {
+    left: 20%; /* Adjust the position of the circle horizontally */
+    top: 30%; /* Adjust the position of the circle vertically */
+    z-index: 1;
+}
+
+.circle3 {
+    left: 68%; /* Adjust the position of the circle horizontally */
+    top: 40%; /* Adjust the position of the circle vertically */
+}
+
+.circle4 {
+    left: 48%; /* Adjust the position of the circle horizontally */
+    top: 45%; /* Adjust the position of the circle vertically */
+}
+
+.circle5 {
+    left: 2%; 
+    top: 20%; 
+}
+
+.circle6 {
+    left: 48%; 
+    top: 0%; 
+}
+
+.triangle {
+    width: 0; /* Set the width and height to 0 to create a triangle */
+    height: 0;
+    border-left: 40px solid transparent; /* Create the left side of the triangle */
+    border-right: 40px solid transparent; /* Create the right side of the triangle */
+    border-bottom: 5em solid #00FF00; /* Create the base of the triangle and set its color */
+    z-index: 3;
+    position: absolute;
+    
+}
+
+.triangle1 {
+    left: 33%; 
+    top: 13%;
+}
+
+.triangle2 {
+    left: 92%; 
+    top: 45%;
+    z-index: 1; 
+}
+
+.triangle3 {
+    left: 20%; 
+    top: 40%;
+    z-index: 2;
+}
+
+.triangle4 {
+    left: 48%; 
+    top: 60%; 
+}
+.triangle5 {
+    left: 23%; 
+    top: 12%; 
+}
+.triangle6 {
+    left: 48%; 
+    top: 5%; 
+    z-index: 1;
+}
+.triangle7 {
+    left: 38%; 
+    top: 20%; 
+}
+
+.oval {
+    width: 10vw;
+    height:8vh;
+    background-color: #e74c3c; 
+    border-radius: 50% / 100%; /* Elliptical shape */
+    z-index: 4;
+    position: absolute;
+}
+.oval1 {
+    left: 48%; 
+    top: 4%; 
+}
+.oval2 {
+    left: 18%; 
+    top: 34%; 
+    z-index: 1;
+}
+.oval3 {
+    left: 68%; 
+    top: 20%; 
+}
+
+.oval4 {
+    left: 88%; 
+    top: 20%; 
+}
+
+.oval5 {
+    left: 8%; 
+    top: 40%; 
+}
+
+.oval6 {
+    left: 48%; 
+    top:31%; 
+}
+
+.oval7 {
+    left: 6%; 
+    top: 20%; 
+}
+
+.oval8 {
+    left: 68%; 
+    top: 2%; 
+}
+
+
+
+
+
+/* advance selector 
+screensize
+@media(max-width:769px)
+{
+    .example-class{
+     margin0 auto !important; //important means it takes prio, use for debug
+     padding0 auto !important;   
+    }
+}
+
+li:nth-child(-n+3)
+{
+    color:red;
+}
+
+z-index for overlap
+*/

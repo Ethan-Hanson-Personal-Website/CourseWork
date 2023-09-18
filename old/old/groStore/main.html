@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styleMain.css">
+</head>
+
+<!-- set some background colors for some internal elements -->
+<style>
+  section {
+    background-color: rgba(65, 64, 64, 0.836);
+  }
+
+  h1 {
+    background-color: rgba(245, 226, 177);
+  }
+
+  h2 {
+    background-color: aliceblue;
+  }
+</style>
+<!-- top header -->
+<!-- pantry items box -->
+<!-- 3 sub categories 2 with a main hear and a list (include all list types) last box is an imag (repeat for pantry, freezer, chilled foods) -->
+<!--   1 Incorporate the major HTML semantic tags.
+           2 Each category of grocery should be in some type of "section".
+           3 Sections should have background colors.
+           4 Section headers should have background colors.
+           5 The main header text needs to be a different color.
+           6 Use three types of headings.
+           7 Include two types of lists.           
+           8 Use the box model to add borders and spacing to each section.
+           9 Add two photos with padding so it is nicely spaced away from the text element.
+           0 CSS needs to be incorporated using an external CSS file, internal in the header, and inline. You choose which CSS goes where -->
+<!-- footer -->
+
+<body>
+  <!-- main header -->
+  <header class="head">Planned Grocery List</header>
+  <!-- the main box of the home page -->
+  <div>
+    <!-- this is for the top category which in this case is pantry items -->
+    <section class="parent">
+      <!-- i decided to divide this into two main blocks. This is the first block which i had fill the width to help divide the elements on the screen that way the category tag holds its priority -->
+      <div class="child1">
+        <h1 class="child1Txt">Pantry Items</h1>
+      </div><br>
+      <!-- this is the second main block that i divided into thirds in order to hold and align the lists and thwe image -->
+      <div>
+        <div class="child2" style="background-color:rgba(196, 39, 39, 0.5);">
+          <h2 style="text-align: center;">Canned Goods</h1>
+            <ol>
+              <li>Beans</li>
+              <li>Corn</li>
+              <li>Pineapple</li>
+              <li>Tomatos</li>
+            </ol>
+        </div>
+        <div class="child2" style="background-color:rgb(161, 117, 36, 0.5);">
+          <h2 style="text-align: center;">Dry Goods</h1>
+            <ol>
+              <li>Flour</li>
+              <li>Cereal</li>
+              <li>Rice</li>
+              <li>Penutbutter</li>
+            </ol>
+        </div>
+
+        <div class="child3">
+          <img src="https://images.pexels.com/photos/458796/pexels-photo-458796.jpeg" alt="pantry" class="child3">
+        </div>
+    </section>
+  </div><br>
+
+<!-- essentially repeated what i did up top but changed the list typings to match the requirements and changed the names and image -->
+  <section class="parent">
+    <div class="child1">
+      <h1 class="child1Txt">Fridge Items</h1>
+    </div><br>
+    <div>
+      <div class="child2" style="background-color:rgba(68, 151, 189, 0.5);">
+        <h2 class="child2Txt" style="text-align: center;">Refridgerated</h1>
+          <ul>
+            <li>Oatmilk</li>
+            <li>Chicken</li>
+            <li>Lunchables</li>
+            <li>Salad</li>
+          </ul>
+      </div>
+      <div class="child2" style="background-color:rgb(151, 128, 180, .5);">
+        <h2 style="text-align: center;">Frozen</h1>
+          <ul>
+            <li>Chocolate dipped Strawberries</li>
+            <li>Ice Cream</li>
+            <li>Veggie Burger</li>
+            <li>Smoothie Pack</li>
+          </ul>
+      </div>
+
+      <div class="child3">
+        <img
+          src="https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="pantry" class="child3">
+      </div>
+  </section>
+  </div><br>
+  </div>
+
+</body>
+
+</html>
