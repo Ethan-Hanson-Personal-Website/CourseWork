@@ -2,29 +2,12 @@
     "version": "0.2.0",
     "configurations": [
       {
-        "type": "node",
+        "name": "Launch Chrome",
         "request": "launch",
-        "name": "Launch index.js",
-        "program": "A:/Users/ethan/Documents/git/push here/CourseWork/9.28/index.js",
-        "cwd": "${workspaceFolder}",
-        "stopOnEntry": false,
-        "args": [],
-        "runtimeArgs": ["--inspect=9229"],
-        "sourceMaps": false,
-        "outFiles": [],
-        "env": {
-          "NODE_ENV": "development"
-        },
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart"
-      },
-      {
-        "type": "npm",
-        "script": "watch",
-        "group": "build",
-        "isBackground": true,
-        "problemMatcher": "$nodemon",
-        "label": "npm: watch"
+        "type": "chrome",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}"
       }
+      
     ]
   }
