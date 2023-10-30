@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+
+  <body class="main-container">
+    <!-- form -->
+    <form class="grocery-form">
+      <h3>Grocery List</h3>
+      <div class="input-container">
+        <input type="text" id="grocery-input" placeholder="e.g. eggs" name= "grocery" />
+        <button type="submit" class="submit-btn">Add</button>
+      </div>
+    </form>
+
+    <!-- table -->
+    <table>
+      <!-- table header -->
+      <thead>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </thead>
+
+      <!-- table body: grocery items-->
+      <tbody id="table-body"></tbody>
+
+      <!-- table footer: totals -->
+      <tfoot>
+        <tr>
+          <td>Totals:</td>
+          <td id="total-qty"></td>
+          <td id="total-price"></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- clear button -->
+    <button class="clear-btn">Clear Items</button>
+  </body>
+</html>
