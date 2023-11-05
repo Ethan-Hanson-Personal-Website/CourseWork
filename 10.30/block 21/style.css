@@ -1,0 +1,79 @@
+/* Reset some default browser styles */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color to the entire body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 1rem;
+}
+
+/* Center the heading */
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+  color: #333; 
+}
+
+/* Style the form container */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Style form labels */
+form label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold; 
+}
+
+/* Style form input and textarea */
+form input[type="text"],
+form input[type="date"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.2rem 0;
+  border: 1px solid #ccc; 
+  border-radius: 3px; 
+}
+
+/* Style the submit button */
+form button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style list items */
+li {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+/* Style delete buttons */
+button {
+  background-color: #ff4136;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
