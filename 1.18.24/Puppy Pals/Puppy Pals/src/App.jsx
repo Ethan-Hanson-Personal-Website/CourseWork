@@ -1,6 +1,7 @@
 import { puppyList } from './data.js'
 import { useState } from 'react'
 import './App.css'
+import './index.css'
 
 
 //deleted all the old counter code and imports
