@@ -1,0 +1,65 @@
+1:in the assignment the direction of Refactor the Starting Point
+
+    Delete the prebuilt counter example as follows: delete all the JSX code except for one parent div element.
+        Remember that all JSX code must be returned within one parent element or fragment.
+    Delete the line that include the useState hook.
+    Delete all the unused import statements.
+    Save the application, and then go to your browser. Notice the empty page, and then congratulate yourself.
+" does not appear to say which jsx to delete. After reviewing the two I think its refering to app (confused since the last instruction refered me to main) since it is the jsx that has divs.
+
+2:same instructions as above but wondering how much total code to delete so changed "import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
+}
+
+export default App" 
+.....................................................
+into
+.....................................................
+"import './App.css'
+
+function App() {
+
+  return (
+    <>
+      <div>
+       
+      </div>
+    </>
+  )
+}
+
+export default App"
+.........................................................
+Am hoping that this was correct (*it was)
+
+3:
